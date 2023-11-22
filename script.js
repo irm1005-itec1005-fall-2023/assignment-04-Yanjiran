@@ -11,7 +11,7 @@
 
 // Constants
 const appID = "app";
-const headingText = "To do. To done. ✅";
+//const headingText = "To do. To done. ✅";
 
 // DOM Elements
 let appContainer = document.getElementById(appID);
@@ -27,7 +27,7 @@ function inititialise() {
     console.error("Error: Could not find app contianer");
     return;
   }
-
+/*
   // Create an h1 and add it to our app
   const h1 = document.createElement("h1");
   h1.innerText = headingText;
@@ -36,7 +36,7 @@ function inititialise() {
   // Init complete
   console.log("App successfully initialised");
 }
-
+*/
 //
 // Inits & Event Listeners
 //

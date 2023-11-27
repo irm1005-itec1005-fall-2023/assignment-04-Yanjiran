@@ -11,10 +11,10 @@
   /* Core colours */
   /* https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557 */
   --colour-amaranth: #e63946;
-  --colour-peppermint: #f1faee;
+  --colour-peppermint: #232323;
   --colour-aquaisland: #a8dadc;
   --colour-wedgewood: #457b9d;
-  --colour-cello: #1d3557;
+  --colour-cello: rgb(227, 227, 227);
 
   /* Header configuration */
   --header-heading-colour: var(--colour-peppermint);
@@ -30,12 +30,11 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--body-default-colour);
-  background-color: var(--body-background-colour);
+  background: radial-gradient( rgb(44, 44, 65), rgb(42, 38, 57), rgb(40, 39, 47), #272626);
 }
 
 main {
   min-height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,4 +52,56 @@ main {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+.app {
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 1fr, 1fr, 1fr;
+
+}
+
+#app-h1 {
+  grid-row-start: 1;
+  grid-end
+}
+ 
+/* ToDo Text Input styling */
+#todo-item {
+  flex-grow: 2;
+  border-radius: 1rem;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-style: none;
+  height: 2rem;
+  width: 20rem; 
+  padding: 1rem;
+}
+
+/* ToDo Button styling */
+#todo-button {
+  background-color: #989898;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 1rem;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-style: none;
+}
+
+.todoInputBox { 
+display: flex;
+flex-direction: row;
+border: 1px;
+
+border-radius: 1rem;
+gap: 0px;
+
+}
+
+/* ToDo list styling */
+.todoList {
+  width: 25rem;
+  height: 20rem;
+  border-style: dashed;
+  margin: 2rem;
 }

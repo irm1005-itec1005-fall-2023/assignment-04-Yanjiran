@@ -41,18 +41,27 @@
   -->
 
   <main>
-    <div id="app">
-      <h1>Just start it.</h1>
-      
-      <form class="Todo">
-        <label for="todo-item"></label>
-        <input type="text" id="todo-item" placeholder="Add something to do" required>
-      </form>
+    <div class="app">
+      <h1 id="app-h1">Just start it.</h1>
 
-      <ul>
-        <li>Something to do</li>
-      </ul>
+      <div >
+        <form class="todoInputBox">
+          <label for="todo-item"></label>
+          <input type="text" id="todo-item" placeholder="Add something to do" required>
+          <input type="submit" id="todo-button" value="Add">
+        </form>
+      </div>
+      
+      <div class="todoList">
+        <ul id="todo-list-ul">
+          <li>Something to do</li>
+        </ul>
+      </div> 
+
     </div>
+
+    
+
   </main>
 
   <!-- Add JavaScript File -->

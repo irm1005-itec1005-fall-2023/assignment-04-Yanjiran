@@ -70,31 +70,34 @@ main {
   padding: 1rem;
 }
 
+#todo-item:focus {
+  outline-width: 0px;
+}
+
 /* ToDo Button styling */
 #todo-button {
-  
+  margin-left: -2rem;
   width: 8rem;
   height: 2.5rem;
-  border-radius: 1rem;
-  border-bottom-left-radius: 0px;
-  border-top-left-radius: 0px;
+  border-radius: 2rem;
   border-style: none;
   transition-duration: 0.3s;
-  background: linear-gradient(120deg, var(--c1, #53524f), var(--c2, #303039) 51%, var(--c1, rgb(38, 131, 28))) var(--x, 0%)/ 200%;
+  background: linear-gradient(120deg, var(--c1, #53524f), var(--c2, #303039) 51%, var(--c1, rgb(71, 220, 55))) var(--x, 0%)/ 200%;
 }
-/*keyframes*/
+/*keyframes  */
 #todo-button:hover { 
   --x: 100%;
 }
 
 
 .todoInputBox { 
-display: flex;
-flex-direction: row;
-border: 1px;
-
-border-radius: 1rem;
-gap: 0px;
+  display: flex;
+  flex-direction: row;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 2rem;
+  gap: 0px;
 
 }
 

@@ -29,7 +29,7 @@
 */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: var(--body-default-colour);
+  color: rgb(218, 218, 218);
   background: radial-gradient( rgb(44, 44, 65), rgb(42, 38, 57), rgb(40, 39, 47), #272626);
 }
 
@@ -54,26 +54,31 @@ main {
   border-width: 0;
 }
 
-#app-h1 {
-  align-text: center;
-}
  
 /* ToDo Text Input styling */
 #todo-item {
   flex-grow: 2;
-  border-radius: 1rem;
+  border-radius: 2rem;
   border-bottom-right-radius: 0px;
   border-top-right-radius: 0px;
   border-style: none;
   height: 2.5rem;
   width: 30rem; 
   padding: 1rem;
-  background-color: #c0c7ca;
+  background-color: #c0c7ca2b;
+  transition-duration: 0.3s;
+
 }
+
+
 
 #todo-item:focus {
   outline-width: 0px;
+  background-color: #cacacac5;
+
 }
+
+
 
 /* ToDo Button styling */
 #todo-button {
@@ -84,27 +89,40 @@ main {
   border-style: none;
   transition-duration: 0.3s;
   background: linear-gradient(120deg, var(--c1, #53524f), var(--c2, #303039) 51%, var(--c1, rgb(71, 220, 55))) var(--x, 0%)/ 200%;
+  color: rgb(193, 193, 193);
 }
 /*keyframes  */
 #todo-button:hover { 
   --x: 100%;
 }
 
-
+/* Input box border */
 .todoInputBox { 
   display: flex;
   flex-direction: row;
   border: 2px;
   border-style: solid;
-  border-color: black;
+  border-color: rgba(101, 101, 101, 0.402);
+  transition-duration: 0.3s;
   border-radius: 2rem;
   gap: 0px;
 
 }
 
+.todoInputBox:hover {
+  border-color: rgba(211, 211, 211, 0.509)
+
+}
+
+.todoInputBox:focus {
+  border-color: rgba(211, 211, 211, 0.509)
+
+}
+
 /* ToDo list styling */
 .todoList {
-  width: 25rem;
+  align-items: center;
+  width: 32rem;
   height: 20rem;
   border-style: dashed;
   margin: 2rem;

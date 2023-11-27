@@ -53,16 +53,9 @@ main {
   white-space: nowrap;
   border-width: 0;
 }
-.app {
-  display: grid;
-  grid-template-columns: 2fr;
-  grid-template-rows: 1fr, 1fr, 1fr;
-
-}
 
 #app-h1 {
-  grid-row-start: 1;
-  grid-end
+  align-text: center;
 }
  
 /* ToDo Text Input styling */
@@ -72,21 +65,28 @@ main {
   border-bottom-right-radius: 0px;
   border-top-right-radius: 0px;
   border-style: none;
-  height: 2rem;
-  width: 20rem; 
+  height: 2.5rem;
+  width: 30rem; 
   padding: 1rem;
 }
 
 /* ToDo Button styling */
 #todo-button {
-  background-color: #989898;
-  width: 5rem;
-  height: 2rem;
+  
+  width: 8rem;
+  height: 2.5rem;
   border-radius: 1rem;
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
   border-style: none;
+  transition-duration: 0.3s;
+  background: linear-gradient(120deg, var(--c1, #53524f), var(--c2, #303039) 51%, var(--c1, rgb(38, 131, 28))) var(--x, 0%)/ 200%;
 }
+/*keyframes*/
+#todo-button:hover { 
+  --x: 100%;
+}
+
 
 .todoInputBox { 
 display: flex;

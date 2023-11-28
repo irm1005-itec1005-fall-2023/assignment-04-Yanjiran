@@ -56,7 +56,7 @@ main {
 
  
 /* ToDo Text Input styling */
-#todo-item {
+#todo-input {
   flex-grow: 2;
   border-radius: 2rem;
   border-bottom-right-radius: 0px;
@@ -72,7 +72,7 @@ main {
 
 
 
-#todo-item:focus {
+#todo-input:focus {
   outline-width: 0px;
   background-color: #cacacac5;
 

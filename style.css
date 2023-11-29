@@ -149,14 +149,12 @@ h1 {
 
 .task-item {
   display: flex;
-  flex-direction: row;
-  
-
+  flex-direction:row;
 }
 
 .todo-item-li {
   flex-grow: 2;
-  width: 8rem;
+  width: 32rem;
   height: 2.5rem;
   margin-top: 1rem;
   border-radius: 1.5rem;
@@ -171,7 +169,7 @@ h1 {
   width: 2.5rem;
   height: 2.5rem;
   margin-top: 1rem;
-  margin-right: 1rem;
+  margin-right: 2rem;
   padding: 0.5rem;
   padding-left: 1rem;
   border-radius: 1.5rem;

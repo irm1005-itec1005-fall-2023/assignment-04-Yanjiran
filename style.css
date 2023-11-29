@@ -177,7 +177,7 @@ h1:hover {
   border-top-right-radius: 0px;
   padding: 0.5rem;
   padding-left: 1rem;
-  background: linear-gradient(#373737 51%, #2d2d2d);
+  background: linear-gradient(#373737 51%, #2d2d2d);  
   /*
   background-color: #373737;
   */
@@ -189,10 +189,8 @@ h1:hover {
 
 .todo-item-li:hover {
   border-color: var(--colour-green);
-  background: linear-gradient(#373737 51%, #2d2d2d);
+  background: linear-gradient(#6d6d6d95 51%, rgba(86, 86, 86, 0.8));
 }
-
-
 
 
 .task-delete {
@@ -205,17 +203,21 @@ h1:hover {
   border-radius: 1.5rem;
   border-style: solid;
   border-width: 1.5px;
-  border-color: #e63946;
-
+  border-color: #a1000d81;
   background-color: #373737;
   
   background-image: url("./images/imports/TrashbinRed.png");
   background-position: center center;
   background-size: 2rem;
+  transition-duration: 0.3s;
   
 }
 
 .task-delete:hover {
   background-color: #85000b;
   border-color: #e63946;
+
+  background-image: url("./images/imports/TrashbinGrey.png");
+  background-position: center center;
+  background-size: 2rem;
 }

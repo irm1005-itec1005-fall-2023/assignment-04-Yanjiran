@@ -71,6 +71,7 @@ h1 {
   height: 2.5rem;
   width: 30rem; 
   padding: 1rem;
+  padding-right: 2.3rem;
   background-color: #c0c7ca2b;
   transition-duration: 0.3s;
 
@@ -100,7 +101,7 @@ h1 {
 
 /*keyframes  */
 
-#todo-button:hover { 
+#add-button:hover { 
   --x: 100%;
 }
 
@@ -148,7 +149,8 @@ h1 {
 
 .task-item {
   display: flex;
-
+  flex-direction: row;
+  
 
 }
 

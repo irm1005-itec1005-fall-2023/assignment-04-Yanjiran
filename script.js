@@ -27,6 +27,7 @@ function inititialise() {
     console.error("Error: Could not find app contianer");
     return;
   }
+}
 /*
   // Create an h1 and add it to our app
   const h1 = document.createElement("h1");

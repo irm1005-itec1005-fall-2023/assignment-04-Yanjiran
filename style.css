@@ -64,6 +64,7 @@ h1 {
   
 }
 h1:hover {
+  cursor: default;
   color: rgb(198, 198, 198);
 }
 
@@ -110,6 +111,7 @@ h1:hover {
 
 #add-button:hover { 
   --x: 100%;
+  cursor: pointer;
 }
 
 /* --------- Input box border ---------*/
@@ -178,6 +180,7 @@ h1:hover {
   padding: 0.5rem;
   padding-left: 1rem;
   background-color: #373737;
+  background: linear-gradient(#4c4c4c, #373737);
   border-style: solid;
   border-color: rgb(101, 101, 117);
   border-width: 1.8px;
@@ -185,8 +188,10 @@ h1:hover {
 }
 
 .todo-item-content:hover {
+  cursor: pointer;
   border-color: var(--colour-green);
   background-color: #484848;
+  background: linear-gradient(#707070b8, #525151d3 );
 }
 
 
@@ -204,8 +209,8 @@ h1:hover {
   color: transparent;
   background-color: #373737;
   
-  border-color: #e63946;
-  background-image: url("./images/imports/TrashbinRed.png");
+  border-color: #979797;
+  background-image: url("./images/imports/TrashbinGrey.png");
   object-fit: scale-down ;
   background-position: center center;
   background-size: 2rem;
@@ -213,6 +218,11 @@ h1:hover {
 }
 
 .task-delete:hover {
-  background-color: #85000b;
+  cursor: pointer;
+  background-color: #510007;
   border-color: #e63946;
+  background-image: url("./images/imports/TrashbinRed.png");
+  object-fit: scale-down ;
+  background-position: center center;
+  background-size: 2rem;
 }

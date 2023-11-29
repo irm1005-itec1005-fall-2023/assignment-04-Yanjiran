@@ -1,10 +1,10 @@
-/* Assignment 04: Finishing a Todo List App
+/* Assignment 04: Finishing a Todo List App*/
 
 
 
 
 // Variables
-
+let a_todo = 
 
 // Constants
 

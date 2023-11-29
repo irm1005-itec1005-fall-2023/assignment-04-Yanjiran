@@ -196,7 +196,14 @@ h1:hover {
   padding: 0.5rem;
   padding-left: 2rem;
   border-radius: 1.5rem;
-  background-color: #85000b;
   border-style: solid;
+  border-width: 1.5px;
+  background-color: #373737;
+  border-color: #e63946;
+  background-image: url(./images/imports/Trashbin\ -\ Red.png);
+}
+
+.task-delete:hover {
+  background-color: #85000b;
   border-color: #e63946;
 }

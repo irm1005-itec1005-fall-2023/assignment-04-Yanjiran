@@ -4,7 +4,11 @@
 
 
 // Variables
-let a_todo = 
+const a_todo = [];
+
+const todoList = document.querySelector("todo-list-ul");
+
+const todoForm = document.querySelector("todoInputBox");
 
 // Constants
 

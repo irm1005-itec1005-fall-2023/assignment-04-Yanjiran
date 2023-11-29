@@ -54,8 +54,12 @@ main {
   border-width: 0;
 }
 
+h1 { 
+  padding-left: 0.5rem;
+}
+
  
-/* ToDo Text Input styling */
+/*------- ToDo Text Input Box styling --------*/
 #todo-input {
   flex-grow: 2;
   border-radius: 2rem;
@@ -70,18 +74,18 @@ main {
 
 }
 
-
-
 #todo-input:focus {
   outline-width: 0px;
   background-color: #cacacac5;
+  border-style: solid;
+  border: 2px;
+  border-color: greenyellow;
 
 }
 
 
-
-/* ToDo Button styling */
-#todo-button {
+/*-------- ToDo Button styling --------*/
+#add-button {
   margin-left: -2rem;
   width: 8rem;
   height: 2.5rem;
@@ -91,12 +95,14 @@ main {
   background: linear-gradient(120deg, var(--c1, #53524f), var(--c2, #303039) 51%, var(--c1, rgb(71, 220, 55))) var(--x, 0%)/ 200%;
   color: rgb(193, 193, 193);
 }
+
 /*keyframes  */
+
 #todo-button:hover { 
   --x: 100%;
 }
 
-/* Input box border */
+/* --------- Input box border ---------*/
 .todoInputBox { 
   display: flex;
   flex-direction: row;
@@ -110,9 +116,10 @@ main {
 }
 
 .todoInputBox:hover {
-  border-color: rgba(211, 211, 211, 0.509)
+  border-color: rgb(21, 128, 0)
 
 }
+
 
 .todoInputBox:focus {
   border-color: rgba(211, 211, 211, 0.509)
@@ -121,9 +128,26 @@ main {
 
 /* ToDo list styling */
 .todoList {
+  padding: 1rem;
   align-items: center;
-  width: 32rem;
+  width: 40rem;
   height: 20rem;
   border-style: dashed;
   margin: 2rem;
+}
+
+#todo-list-ul {
+  list-style: none;
+  margin-left: -2rem;
+  margin-right: 0.5rem;
+
+}
+
+.todo-item {
+  background-color: #457b9d;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  border-radius: 1.5rem;
+
 }

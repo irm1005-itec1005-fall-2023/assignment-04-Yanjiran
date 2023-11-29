@@ -187,6 +187,7 @@ h1:hover {
   transition-duration: 0.2s;
 }
 
+
 .todo-item-content:hover {
   cursor: pointer;
   border-color: var(--colour-green);

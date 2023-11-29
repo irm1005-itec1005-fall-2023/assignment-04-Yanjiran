@@ -144,8 +144,6 @@ h1:hover {
   height: 20rem;
   border-style: none;
   margin: 2rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
 
   background-color: #81818039;
   border-radius: 0.5rem;
@@ -165,59 +163,55 @@ h1:hover {
   row-gap: 0px;
 }
 
-.todo-item-li {
-  
-  width: 35rem;
+.todo-item-content {
+  display: flex;
+  flex-direction: row;
+  row-gap: 0px;
+  width: 34rem;
   height: 2.5rem;
   margin-top: 1rem;
-  margin-right: -1rem;
+  margin-right: rem;
   gap: 0px;
   border-radius: 1.5rem;
   border-bottom-right-radius: 0px;
   border-top-right-radius: 0px;
   padding: 0.5rem;
   padding-left: 1rem;
-  background: linear-gradient(#373737 51%, #2d2d2d);  
-  /*
   background-color: #373737;
-  */
   border-style: solid;
   border-color: rgb(101, 101, 117);
   border-width: 1.8px;
   transition-duration: 0.2s;
 }
 
-.todo-item-li:hover {
+.todo-item-content:hover {
   border-color: var(--colour-green);
-  background: linear-gradient(#6d6d6d95 51%, rgba(86, 86, 86, 0.8));
+  background-color: #484848;
 }
 
 
 .task-delete {
-  width: 1rem;
+  width: 2rem;
   height: 2.5rem;
   margin-top: 1rem;
-  margin-right: 1rem;
+  margin-left: -1rem;
   padding: 0.5rem;
   padding-left: 2rem;
   border-radius: 1.5rem;
   border-style: solid;
   border-width: 1.5px;
-  border-color: #a1000d81;
+
   background-color: #373737;
   
+  border-color: #e63946;
   background-image: url("./images/imports/TrashbinRed.png");
+  object-fit: scale-down ;
   background-position: center center;
   background-size: 2rem;
-  transition-duration: 0.3s;
   
 }
 
 .task-delete:hover {
   background-color: #85000b;
   border-color: #e63946;
-
-  background-image: url("./images/imports/TrashbinGrey.png");
-  background-position: center center;
-  background-size: 2rem;
 }

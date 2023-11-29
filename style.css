@@ -126,7 +126,7 @@ h1 {
 
 }
 
-/* ToDo list styling */
+/*--------- Task list styling ----------*/
 .todoList {
   padding: 1rem;
   align-items: center;
@@ -137,17 +137,38 @@ h1 {
 }
 
 #todo-list-ul {
+  
   list-style: none;
   margin-left: -2rem;
   margin-right: 0.5rem;
 
 }
 
-.todo-item {
-  background-color: #457b9d;
+.task-item {
+  display: flex;
+
+
+}
+
+.todo-item-li {
+  flex-grow: 2;
+  width: 8rem;
+  height: 2.5rem;
   margin-top: 1rem;
+  border-radius: 1.5rem;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  background-color: #457b9d;
+}
+
+.task-delete {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
   padding: 0.5rem;
   padding-left: 1rem;
   border-radius: 1.5rem;
-
 }

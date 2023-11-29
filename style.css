@@ -201,6 +201,7 @@ h1:hover {
   border-style: solid;
   border-width: 1.5px;
 
+  color: transparent;
   background-color: #373737;
   
   border-color: #e63946;

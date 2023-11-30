@@ -197,6 +197,7 @@ h1:hover {
 
 .task-complete {
   background: linear-gradient(#159f00c5, #118100be);
+  text-decoration: line-through;
 }
 
 

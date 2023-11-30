@@ -1,7 +1,3 @@
-/* Assignment 04: Finishing a Todo List App*/
-
-
-
 
 //======== Variables ===========//
 const todoTasks = [];
@@ -28,12 +24,14 @@ function createTodoItem(task) {
   // Create <p> with class 'todo-item-content'
   let todoItemContent = document.createElement('p');
   todoItemContent.className = 'todo-item-content';
-  todoItemContent.textContent = task.text;
 
-  // Set completion status
-  if (task.completed) {
-    todoItemContent.classList.add('task-complete');
-  }
+  // Create <span> with class 'task-text' for the task content
+  let taskText = document.createElement('span');
+  taskText.className = 'task-text';
+  taskText.textContent = task.text;
+
+  // Append <span> to <p>
+  todoItemContent.appendChild(taskText);
 
   // Create <input> with type 'button' and class 'task-delete'
   let deleteButton = document.createElement('input');
@@ -44,6 +42,12 @@ function createTodoItem(task) {
   // Append <p> and <input> to <li>
   listItem.appendChild(todoItemContent);
   listItem.appendChild(deleteButton);
+
+  // Set completion status and styles
+  if (task.completed) {
+    todoItemContent.classList.add('task-complete');
+    taskText.classList.add('completed-text');
+  }
 
   return listItem;
 }

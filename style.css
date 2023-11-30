@@ -187,7 +187,7 @@ h1:hover {
 
   background: linear-gradient(#4c4c4c, #373737);
   cursor: pointer;
-
+  transition-duration: 0.2s;
 }
 
 .todo-item-content:hover {

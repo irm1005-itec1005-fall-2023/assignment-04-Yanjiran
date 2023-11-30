@@ -75,7 +75,7 @@ function handleDeleteButtonClick(event) {
     // Get the index of the task in the list
     const index = Array.from(event.target.closest('ul').children).indexOf(event.target.closest('li'));
 
-    // Remove the task
+    // Remove task
     todoTasks.splice(index, 1);
     renderList();
   }

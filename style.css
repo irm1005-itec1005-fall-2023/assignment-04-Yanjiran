@@ -11,10 +11,12 @@
   /* Core colours */
   /* https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557 */
   --colour-amaranth: #e63946;
-  --colour-peppermint: #f1faee;
+  --colour-peppermint: #232323;
   --colour-aquaisland: #a8dadc;
   --colour-wedgewood: #457b9d;
-  --colour-cello: #1d3557;
+  --colour-cello: rgb(227, 227, 227);
+  --colour-green: rgb(21, 128, 0);
+
 
   /* Header configuration */
   --header-heading-colour: var(--colour-peppermint);
@@ -29,13 +31,12 @@
 */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: var(--body-default-colour);
-  background-color: var(--body-background-colour);
+  color: rgb(218, 218, 218);
+  background: radial-gradient( rgb(44, 44, 65), rgb(42, 38, 57), rgb(40, 39, 47), #272626);
 }
 
 main {
   min-height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,4 +54,182 @@ main {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+h1 { 
+  padding-left: 0.5rem;
+  color: rgb(146, 146, 146);
+  transition-duration: 0.2s;
+  width: 13rem;
+  
+}
+h1:hover {
+  cursor: default;
+  color: rgb(198, 198, 198);
+}
+
+ 
+/*------- ToDo Text Input Box styling --------*/
+#todo-input {
+  flex-grow: 2;
+  border-radius: 2rem;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-style: none;
+  height: 2.5rem;
+  width: 30rem; 
+  padding: 1rem;
+  padding-right: 2.3rem;
+  background-color: #c0c7ca2b;
+  transition-duration: 0.3s;
+
+}
+
+#todo-input:focus {
+  outline-width: 0px;
+  background-color: #cacacac5;
+  border-style: solid;
+  border: 2px;
+  border-color: greenyellow;
+
+}
+
+
+/*-------- ToDo Button styling --------*/
+#add-button {
+  margin-left: -2rem;
+  width: 8rem;
+  height: 2.5rem;
+  border-radius: 2rem;
+  border-style: none;
+  transition-duration: 0.3s;
+  background: linear-gradient(120deg, var(--c1, #53524f), var(--c2, #303039) 51%, var(--c1, rgb(71, 220, 55))) var(--x, 0%)/ 200%;
+  color: rgb(193, 193, 193);
+}
+
+/*keyframes  */
+
+#add-button:hover { 
+  --x: 100%;
+  cursor: pointer;
+}
+
+/* --------- Input box border ---------*/
+.todoInputBox { 
+  display: flex;
+  flex-direction: row;
+  border: 2px;
+  border-style: solid;
+  border-color: rgba(101, 101, 101, 0.402);
+  transition-duration: 0.3s;
+  border-radius: 2rem;
+  gap: 0px;
+
+}
+
+.todoInputBox:hover {
+  border-color: var(--colour-green)
+
+}
+
+.todoInputBox:focus {
+  border-color: rgba(211, 211, 211, 0.509)
+
+}
+
+/*--------- Task list styling ----------*/
+.todoList {
+  padding: 1rem;
+  align-items: center;
+  width: 40rem;
+  height: 30rem;
+  border-style: none;
+  margin: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  background-color: #81818039;
+  border-radius: 0.5rem;
+}
+
+#todo-list-ul {
+  
+  list-style: none;
+  margin-left: -2rem;
+  margin-right: 0.5rem;
+
+}
+
+.todo-item-li {
+  display: flex;
+  flex-direction:row;
+  row-gap: 0px;
+}
+
+.todo-item-content {
+  display: flex;
+  flex-direction: row;
+  row-gap: 0px;
+
+  width: 34rem;
+  height: 2.5rem;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+
+  border-radius: 1.5rem;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-style: solid;
+  border-color: rgb(101, 101, 117);
+  border-width: 1.8px;
+
+  background: linear-gradient(#4c4c4c, #373737);
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+.todo-item-content:hover {
+  border-color: var(--colour-green);
+  background: linear-gradient(#707070b8, #525151d3);
+}
+
+.task-complete {
+  background: linear-gradient(#159f00c5, #118100be);
+  text-decoration: line-through;
+}
+
+
+.task-delete {
+  width: 2rem;
+  height: 2.5rem;
+  margin-top: 1rem;
+  margin-left: -1rem;
+  padding: 0.5rem;
+  padding-left: 2rem;
+
+  border-radius: 1.5rem;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: #979797;
+
+  color: transparent;
+  background-color: #373737;
+  
+  background-image: url("./images/imports/TrashbinGrey.png");
+  object-fit: scale-down ;
+  background-position: center center;
+  background-size: 2rem;
+  
+}
+
+.task-delete:hover {
+  cursor: pointer;
+  background-color: #510007;
+  border-color: #e63946;
+  background-image: url("./images/imports/TrashbinRed.png");
+  object-fit: scale-down ;
+  background-position: center center;
+  background-size: 2rem;
 }

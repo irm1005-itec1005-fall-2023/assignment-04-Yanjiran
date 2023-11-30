@@ -72,7 +72,7 @@ function renderList() {
 // Function to handle delete button click
 function handleDeleteButtonClick(event) {
   if (event.target.classList.contains('task-delete')) {
-    // Get the index of the task in the list
+    // Get index of task in list
     const index = Array.from(event.target.closest('ul').children).indexOf(event.target.closest('li'));
 
     // Remove task
@@ -85,15 +85,14 @@ function handleDeleteButtonClick(event) {
 function markTaskComplete(event) {
   const clickedElement = event.target;
 
-  // Check if the clicked target has the class 'todo-item-content'
+  // Check if clicked item has class 'todo-item-content'
   if (clickedElement.classList.contains('todo-item-content')) {
-    // Find the parent <li> and get its index
+    // Find parent <li> and get its index
     const index = Array.from(clickedElement.closest('ul').children).indexOf(clickedElement.closest('li'));
 
-    // Toggle the completion status in the todoTasks array
+    // Toggle completion status in todoTasks array
     todoTasks[index].completed = !todoTasks[index].completed;
 
-    // Update the rendering of the list
     renderList();
   }
 }

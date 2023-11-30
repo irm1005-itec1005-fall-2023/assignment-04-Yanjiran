@@ -132,7 +132,6 @@ h1:hover {
 
 }
 
-
 .todoInputBox:focus {
   border-color: rgba(211, 211, 211, 0.509)
 
@@ -143,9 +142,11 @@ h1:hover {
   padding: 1rem;
   align-items: center;
   width: 40rem;
-  height: 20rem;
+  height: 30rem;
   border-style: none;
   margin: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 
   background-color: #81818039;
   border-radius: 0.5rem;
@@ -159,7 +160,7 @@ h1:hover {
 
 }
 
-.task-item {
+.todo-item-li {
   display: flex;
   flex-direction:row;
   row-gap: 0px;
@@ -173,7 +174,7 @@ h1:hover {
   width: 34rem;
   height: 2.5rem;
   margin-top: 1rem;
-  margin-right: rem;
+  margin-left: 0.5rem;
   padding: 0.5rem;
   padding-left: 1rem;
 
@@ -184,18 +185,18 @@ h1:hover {
   border-color: rgb(101, 101, 117);
   border-width: 1.8px;
 
-  background-color: #373737;
   background: linear-gradient(#4c4c4c, #373737);
+  cursor: pointer;
 
-  transition-duration: 0.2s;
 }
 
-
 .todo-item-content:hover {
-  cursor: pointer;
   border-color: var(--colour-green);
-  background-color: #484848;
-  background: linear-gradient(#707070b8, #525151d3 );
+  background: linear-gradient(#707070b8, #525151d3);
+}
+
+.task-complete {
+  background: linear-gradient(#159f00c5, #118100be);
 }
 
 

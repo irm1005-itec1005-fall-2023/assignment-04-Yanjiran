@@ -169,21 +169,24 @@ h1:hover {
   display: flex;
   flex-direction: row;
   row-gap: 0px;
+
   width: 34rem;
   height: 2.5rem;
   margin-top: 1rem;
   margin-right: rem;
-  gap: 0px;
+  padding: 0.5rem;
+  padding-left: 1rem;
+
   border-radius: 1.5rem;
   border-bottom-right-radius: 0px;
   border-top-right-radius: 0px;
-  padding: 0.5rem;
-  padding-left: 1rem;
-  background-color: #373737;
-  background: linear-gradient(#4c4c4c, #373737);
   border-style: solid;
   border-color: rgb(101, 101, 117);
   border-width: 1.8px;
+
+  background-color: #373737;
+  background: linear-gradient(#4c4c4c, #373737);
+
   transition-duration: 0.2s;
 }
 
@@ -203,14 +206,15 @@ h1:hover {
   margin-left: -1rem;
   padding: 0.5rem;
   padding-left: 2rem;
+
   border-radius: 1.5rem;
   border-style: solid;
   border-width: 1.5px;
+  border-color: #979797;
 
   color: transparent;
   background-color: #373737;
   
-  border-color: #979797;
   background-image: url("./images/imports/TrashbinGrey.png");
   object-fit: scale-down ;
   background-position: center center;
